@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://opensciencesoftware.com/*"
+  to = "https://openscience.software/:splat"
+  status = 301
+  force = true
