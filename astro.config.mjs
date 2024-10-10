@@ -6,6 +6,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://openscience.software/',
-	integrations: [mdx(), sitemap()],
+    site: 'https://openscience.software/',
+    integrations: [mdx(), sitemap()],
 });
