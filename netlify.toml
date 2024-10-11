@@ -3,3 +3,9 @@
   to = "https://openscience.software/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://opensoftware.science/*"
+  to = "https://openscience.software/:splat"
+  status = 301
+  force = true
