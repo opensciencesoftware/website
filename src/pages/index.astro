@@ -8,11 +8,11 @@ import Footer from '../components/Footer.astro';
     <head>
         <BaseHead title="Open Science Software Foundation" description="Empowering scientists through innovative open source." />
     </head>
-    <body style="max-width: 800px; margin: 0 auto;">
+    <body>
         <main>
-            <header>
+            <header style="display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 1rem; width: 100%;">
                 <img src="/images/ossf-logo-primary.svg" alt="Open Science Software Foundation logo" width="400" height="400" />
-                <h1 class="header-title">Empowering scientists through innovative open source.</h1>
+                <h1 class="header-title">Empowering scientists through innovative open source</h1>
             </header>
         </main>
         <section class="main">
@@ -67,41 +67,41 @@ import Footer from '../components/Footer.astro';
                     </div>
                     <div style="display: flex; flex-direction: column; margin-left: 2em;">
                         <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; padding-top: .5em;">Current Projects</h2>
-                        <ul style="line-height: 1.4;">
-                            <li>
-                                <p>nf-core infrastructure developer (CRG)</p>
-                                <p>2024 - onwards</p>
-                                <p>Funding 50% of a position for a developer to work on foundational tooling and infrastructure to support the nf-core community.</p>
+                        <ul style="line-height: 1.4; list-style-type: none; padding-left: 0; display: flex; flex-direction: row; flex-wrap: wrap; gap: .5rem;">
+                            <li class="project-card">
+                                <p class="project-card-title">nf-core infrastructure developer (CRG)</p>
+                                <p class="project-card-dates">2024 - onwards</p>
+                                <p class="project-card-description">Funding 50% of a position for a developer to work on foundational tooling and infrastructure to support the nf-core community.</p>
                             </li>
-                            <li>
-                                <p>MITACS Accelerate PhD Fellowship</p>
-                                <p>2024 - 2025</p>
-                                <p>Funding one year project to develop Nextflow and nf-core pipelines for neuroimaging, a crucial and emerging field in the life sciences.</p>
+                            <li class="project-card">
+                                <p class="project-card-title">MITACS Accelerate PhD Fellowship</p>
+                                <p class="project-card-dates">2024 - 2025</p>
+                                <p class="project-card-description">Funding one year project to develop Nextflow and nf-core pipelines for neuroimaging, a crucial and emerging field in the life sciences.</p>
                             </li>
-                            <li>
-                                <p>2x QBiC PhD positions</p>
-                                <p>2025 - 2029</p>
-                                <p>Funding for 50% of two PhD fellowships at the Quantitative Biology Centre at the University of Tübingen, to work on nf-core central software development projects.</p>
+                            <li class="project-card">
+                                <p class="project-card-title">2x QBiC PhD positions</p>
+                                <p class="project-card-dates">2025 - 2029</p>
+                                <p class="project-card-description">Funding for 50% of two PhD fellowships at the Quantitative Biology Centre at the University of Tübingen, to work on nf-core central software development projects.</p>
                             </li>
-                            <li>
-                                <p>Ecoflow BBSRC Grant (UCL)</p>
-                                <p>2024 - 2026</p>
-                                <p>Funding for position to work on ecology Nextflow pipelines.</p>
+                            <li class="project-card">
+                                <p class="project-card-title">Ecoflow BBSRC Grant (UCL)</p>
+                                <p class="project-card-dates">2024 - 2026</p>
+                                <p class="project-card-description">Funding for position to work on ecology Nextflow pipelines.</p>
                             </li>
-                            <li>
-                                <p>Nextflow Ambassadors</p>
-                                <p>2023 - onwards</p>
-                                <p>Travel grants and financial support for members of the <a href="https://nextflow.io/ambassadors.html">Nextflow Ambassador program</a>.</p>
+                            <li class="project-card">
+                                <p class="project-card-title">Nextflow Ambassadors</p>
+                                <p class="project-card-dates">2023 - onwards</p>
+                                <p class="project-card-description">Travel grants and financial support for members of the <a href="https://nextflow.io/ambassadors.html">Nextflow Ambassador program</a>.</p>
                             </li>
-                            <li>
-                                <p>nf-core mentorships</p>
-                                <p>2025 - onwards</p>
-                                <p>Continuation of the popular <a href="https://nf-co.re/mentorships">nf-core mentorships</a> program, through which mentors are rewarded for the time put into helping mentees accepted into the program.</p>
+                            <li class="project-card">
+                                <p class="project-card-title">nf-core mentorships</p>
+                                <p class="project-card-dates">2025 - onwards</p>
+                                <p class="project-card-description">Continuation of the popular <a href="https://nf-co.re/mentorships">nf-core mentorships</a> program, through which mentors are rewarded for the time put into helping mentees accepted into the program.</p>
                             </li>
-                            <li>
-                                <p>nf-core event support</p>
-                                <p>2024 - onwards</p>
-                                <p>Sponsorship of distributed nf-core hackathon sites.</p>
+                            <li class="project-card">
+                                <p class="project-card-title">nf-core event support</p>
+                                <p class="project-card-dates">2024 - onwards</p>
+                                <p class="project-card-description">Sponsorship of distributed nf-core hackathon sites.</p>
                             </li>
                         </ul>
                         <p>* Seqera will act as the interim funding provider until the legal status of the Foundation is complete. </p>

@@ -47,29 +47,38 @@ body {
     line-height: 1.7;
 }
 main {
-    width: 900px;
     max-width: calc(100% - 2em);
     margin: auto;
     padding: 3em 1em;
+    max-width: 800px; 
+    margin: 0 auto;
+}
+section {
+    max-width: 800px; 
+    margin: 0 auto;
 }
 article {
     width: 720px;
     max-width: calc(100% - 2em);
     margin: auto;
 }
-.hex-indicator {
-    /* background-image: url('/images/black-box.svg');
-    background-size: contain;
-    background-repeat: repeat-y;
-    width: 20px;
-    height: 100%;
-    flex-grow: 1; */
-}
 .header-title {
     font-family: 'Instrument Serif', serif;
     font-weight: 400;
     font-style: italic;
     font-size: 2.441em;
+}
+.project-card {
+    display: flex; flex-direction: column; padding: 0px; margin: 0px; gap: 10px; width: calc(50% - 2.5rem); border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 10px; padding: 1rem;
+}
+.project-card-title {
+    margin: 0px; font-weight: 600; font-family: 'Instrument Serif', serif; font-size: 1.25em;
+}
+.project-card-dates {
+    margin: 0px; font-style: italic; font-family: 'Instrument Serif', serif;
+}
+.project-card-description {
+    margin: 0px; font-size: .9em; line-height: 1.2;
 }
 h1, .h1,
 h2, .h2,
