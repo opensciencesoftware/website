@@ -8,16 +8,181 @@ import Footer from '../components/Footer.astro';
     <head>
         <BaseHead title="Open Science Software Foundation" description="Empowering scientists through innovative open source." />
     </head>
-    <body>
+    <body style="max-width: 800px; margin: 0 auto;">
         <main>
             <header>
-                <h1>Welcome to the Open Science Software Foundation</h1>
                 <img src="/images/ossf-logo-primary.svg" alt="Open Science Software Foundation logo" width="400" height="400" />
+                <h1 class="header-title">Empowering scientists through innovative open source.</h1>
             </header>
-            <article>
-                <p>More information coming soon. Stay tuned!</p>
-            </article>
         </main>
+        <section class="main">
+            <div style="display: flex; flex-direction: column; gap: 1rem; margin: 0 auto;">
+                <div class="hex-indicator-container" style="width: 100%; display: flex; flex-direction: row; margin-bottom: 1rem;">
+                    <div class="hex-indicator" style="display: flex; flex-direction: column;font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; background-position: center; text-align: center; justify-content: flex-start; align-items: center; align-self: flex-start; align-content: center;">
+                        <div style="background-image: url('images/ossf-hex-blank.svg'); background-size: contain; background-repeat: no-repeat; width: 100px; height: 100px; padding-top: 5px;">
+                            <span style="vertical-align: middle; vertical-align: -webkit-baseline-middle; font-size: 2.5em;">i.</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; margin-left: 2em;">
+                        <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; padding-top: .5em;">Mission</h2>
+                        <p style="line-height: 1.4;">The Open Science Software Foundation (OSSF) is a <b>non-profit foundation</b> dedicated to supporting open source scientific tools, promoting accessibility and free availability of resources to the global scientific community.</p>
+                    </div>
+                </div>
+                <div class="hex-indicator-container" style="width: 100%; display: flex; flex-direction: row; margin-bottom: 1rem;">
+                    <div class="hex-indicator" style="display: flex; flex-direction: column;font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; background-position: center; text-align: center; justify-content: flex-start; align-items: center; align-self: flex-start; align-content: center;">
+                        <div style="background-image: url('images/ossf-hex-blank.svg'); background-size: contain; background-repeat: no-repeat; width: 100px; height: 100px; padding-top: 5px;">
+                            <span style="vertical-align: middle; vertical-align: -webkit-baseline-middle; font-size: 2.5em;">ii.</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; margin-left: 2em;">
+                        <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; padding-top: .5em;">Focus</h2>
+                        <ol style="line-height: 1.4;">
+                            <li>Support existing Open Science projects</li>
+                            <li>Incubate new Open Science projects</li>
+                            <li>Promote Open Science policy</li>
+                            <li>Be a public, non-profit fiscal and legal entity for Open Science projects</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="hex-indicator-container" style="width: 100%; display: flex; flex-direction: row; margin-bottom: 1rem;">
+                    <div class="hex-indicator" style="display: flex; flex-direction: column;font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; background-position: center; text-align: center; justify-content: flex-start; align-items: center; align-self: flex-start; align-content: center;">
+                        <div style="background-image: url('images/ossf-hex-blank.svg'); background-size: contain; background-repeat: no-repeat; width: 100px; height: 100px; padding-top: 5px;">
+                            <span style="vertical-align: middle; vertical-align: -webkit-baseline-middle; font-size: 2.5em;">iii.</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; margin-left: 2em;">
+                        <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; padding-top: .5em;">Activities</h2>
+                        <ol style="line-height: 1.4;">
+                            <li>Support funding for Open Science projects</li>
+                            <li>Support for nf-core, Nextflow, MultiQC communities</li>
+                            <li>Incubating new OSS Projects</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="hex-indicator-container" style="width: 100%; display: flex; flex-direction: row; margin-bottom: 1rem;">
+                    <div class="hex-indicator" style="display: flex; flex-direction: column;font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; background-position: center; text-align: center; justify-content: flex-start; align-items: center; align-self: flex-start; align-content: center;">
+                        <div style="background-image: url('images/ossf-hex-blank.svg'); background-size: contain; background-repeat: no-repeat; width: 100px; height: 100px; padding-top: 5px;">
+                            <span style="vertical-align: middle; vertical-align: -webkit-baseline-middle; font-size: 2.5em;">iv.</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; margin-left: 2em;">
+                        <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; padding-top: .5em;">Current Projects</h2>
+                        <ul style="line-height: 1.4;">
+                            <li>
+                                <p>nf-core infrastructure developer (CRG)</p>
+                                <p>2024 - onwards</p>
+                                <p>Funding 50% of a position for a developer to work on foundational tooling and infrastructure to support the nf-core community.</p>
+                            </li>
+                            <li>
+                                <p>MITACS Accelerate PhD Fellowship</p>
+                                <p>2024 - 2025</p>
+                                <p>Funding one year project to develop Nextflow and nf-core pipelines for neuroimaging, a crucial and emerging field in the life sciences.</p>
+                            </li>
+                            <li>
+                                <p>2x QBiC PhD positions</p>
+                                <p>2025 - 2029</p>
+                                <p>Funding for 50% of two PhD fellowships at the Quantitative Biology Centre at the University of Tübingen, to work on nf-core central software development projects.</p>
+                            </li>
+                            <li>
+                                <p>Ecoflow BBSRC Grant (UCL)</p>
+                                <p>2024 - 2026</p>
+                                <p>Funding for position to work on ecology Nextflow pipelines.</p>
+                            </li>
+                            <li>
+                                <p>Nextflow Ambassadors</p>
+                                <p>2023 - onwards</p>
+                                <p>Travel grants and financial support for members of the <a href="https://nextflow.io/ambassadors.html">Nextflow Ambassador program</a>.</p>
+                            </li>
+                            <li>
+                                <p>nf-core mentorships</p>
+                                <p>2025 - onwards</p>
+                                <p>Continuation of the popular <a href="https://nf-co.re/mentorships">nf-core mentorships</a> program, through which mentors are rewarded for the time put into helping mentees accepted into the program.</p>
+                            </li>
+                            <li>
+                                <p>nf-core event support</p>
+                                <p>2024 - onwards</p>
+                                <p>Sponsorship of distributed nf-core hackathon sites.</p>
+                            </li>
+                        </ul>
+                        <p>* Seqera will act as the interim funding provider until the legal status of the Foundation is complete. </p>
+                    </div>
+                </div>
+                <div class="hex-indicator-container" style="width: 100%; display: flex; flex-direction: row; margin-bottom: 1rem;">
+                    <div class="hex-indicator" style="display: flex; flex-direction: column;font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; background-position: center; text-align: center; justify-content: flex-start; align-items: center; align-self: flex-start; align-content: center;">
+                        <div style="background-image: url('images/ossf-hex-blank.svg'); background-size: contain; background-repeat: no-repeat; width: 100px; height: 100px; padding-top: 5px;">
+                            <span style="vertical-align: middle; vertical-align: -webkit-baseline-middle; font-size: 2.5em;">v.</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; margin-left: 2em;">
+                        <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; padding-top: .5em;">Sources of funding</h2>
+                        <ol style="line-height: 1.4;">
+                            <li>Seqera</li>
+                            <li>Future: Grants</li>
+                            <li>Other corporate sponsors, philanthropy</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="hex-indicator-container" style="width: 100%; display: flex; flex-direction: row; margin-bottom: 1rem;">
+                    <div class="hex-indicator" style="display: flex; flex-direction: column;font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; background-position: center; text-align: center; justify-content: flex-start; align-items: center; align-self: flex-start; align-content: center;">
+                        <div style="background-image: url('images/ossf-hex-blank.svg'); background-size: contain; background-repeat: no-repeat; width: 100px; height: 100px; padding-top: 5px;">
+                            <span style="vertical-align: middle; vertical-align: -webkit-baseline-middle; font-size: 2.5em;">vi.</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; margin-left: 2em;">
+                        <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; padding-top: .5em;">Trustees</h2>
+                        <ol style="line-height: 1.4;">
+                            <li>Ellen Sherwood - nf-core steering committee</li>
+                            <li>Paolo Di Tommaso - Creator of Nextflow</li>
+                            <li>Gisela Gavernet - nf-core steering committee</li>
+                            <li>Alex Peltzer - Co-creator of nf-core</li>
+                            <li>Evan Floden - nf-core steering committee</li>
+                            <li>Sven - nf-core steering committee</li>
+                            <li>Phil - Co-creator of nf-core</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="hex-indicator-container" style="width: 100%; display: flex; flex-direction: row; margin-bottom: 1rem;">
+                    <div class="hex-indicator" style="display: flex; flex-direction: column;font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; background-position: center; text-align: center; justify-content: flex-start; align-items: center; align-self: flex-start; align-content: center;">
+                        <div style="background-image: url('images/ossf-hex-blank.svg'); background-size: contain; background-repeat: no-repeat; width: 100px; height: 100px; padding-top: 5px;">
+                            <span style="vertical-align: middle; vertical-align: -webkit-baseline-middle; font-size: 2.5em;">vii.</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; margin-left: 2em;">
+                        <h2 style="font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; padding-top: .5em;">FAQ</h2>
+                        <ol style="line-height: 1.4;">
+                            <li>
+                                <strong>When will the OSSF be fully established?</strong>
+                                <p>The OSSF is in the process of becoming a legal Foundation in the state of Catalonia. We hope to be fully operational within 2025.</p>
+                            </li>
+                            <li>
+                                <strong>How do you select projects?</strong>
+                                <p>We are currently defining the procedure for project selection. Projects will be assessed on a case-by-case basis by the board of trustees. If you have a project that you think would be a good fit for the OSSF, please fill in this form to get in touch.</p>
+                            </li>
+                            <li>
+                                <strong>How does governance work?</strong>
+                                <p>The Board of Trustees is responsible for fulfilling the foundation’s mission and managing its resources. The first board is composed of members of the nf-core steering committee and Paolo. Going forward the Board will self-appoint new trustees. Trustees serve for two-year terms and may be re-elected indefinitely.</p>
+                            </li>
+                            <li>
+                                <strong>Does Seqera own the OSSF?</strong>
+                                <p>No. Seqera has no legal or financial interest, the Foundation is a public good and a completely separate entity.</p>
+                            </li>
+                            <li>
+                                <strong>How do you manage conflicts of interest?</strong>
+                                <p>Trustees must avoid conflict of interest and declare to the board any that might arise. In order to avoid conflict of interest stemming from employment or commercial interests, the trustees come from varied backgrounds.</p>
+                            </li>
+                            <li>
+                                <strong>Does the OSSF hire developers?</strong>
+                                <p>The OSSF does not plan to be an employer - rather a distributor of funds. The foundation can pay for expenses such as invoices sent from institutions or self-employed contractors. The OSSF is not an employer - only a distributor of funds. The foundation can pay for expenses and pay invoices sent from institutions or self-employed contractors.</p>
+                            </li>
+                            <li>
+                                <strong>Does all nf-core activity have to go through the foundation?</strong>
+                                <p>No - institutions can (and should) continue to apply for funding to work on projects related to nf-core. The OSSF acts as a fiscal sponsor: an additional entity which can be used to apply for and distribute funds.</p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
         <Footer />
     </body>
 </html>
