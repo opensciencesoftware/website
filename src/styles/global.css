@@ -79,7 +79,7 @@ article p {
     font-style: italic;
     font-size: 2.441em;
 }
-.projects {
+.cards {
     line-height: 1.4;
     list-style-type: none;
     padding-left: 0;
@@ -87,6 +87,13 @@ article p {
     flex-direction: row;
     flex-wrap: wrap;
     gap: .5rem;
+    @media (max-width: 720px) {
+        flex-direction: column;
+        padding: 0 !important;
+        li {
+            width: calc(100% - 60px) !important;
+        }
+    }
     li {
         display: flex;
         flex-direction: column;
@@ -100,13 +107,56 @@ article p {
     }
     h3 {
         margin: 0px; font-weight: 600; font-family: 'Instrument Serif', serif; font-size: 1.25em;
+        text-wrap: pretty;
     }
     h4 {
-        margin: 0px; font-weight: 400; font-style: italic; font-family: 'Instrument Serif', serif; font-size: 1em;
+        margin: 0px; font-weight: 400; font-style: italic; font-family: 'Instrument Serif', serif; font-size: 1em; color: rgba(0, 0, 0, 0.5);
+        text-wrap: pretty;
     }
     p {
-        margin: 0px; font-size: .9em; line-height: 1.2;
+        margin: 0px; font-size: .9em; line-height: 1.2; color: rgba(0, 0, 0, 0.75);
+        text-wrap: pretty;
     }
+    &.ordered-cards {
+        list-style: none;
+        position: relative;
+        counter-reset: list1;
+        > li {
+            counter-increment: list1 1;
+            position: relative;
+            padding-left: 3em;
+            &::before {
+                content: counter(list1, lower-roman) ".\00A0";
+                text-align: right;
+                position: absolute;
+                left: 0px;
+                padding-left: .5em;
+                margin-top: -6px;
+                width: 40px;
+                color: rgba(0, 0, 0, 0.5);
+                /* margin-top: -20px; */
+                /* width: 100px; */
+                /* height: 95px; */
+                /* padding-top: 5px; */
+                font-family: 'Instrument Serif', serif;
+                font-weight: 400;
+                font-style: italic;
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+.footnote {
+    padding: .6em 1em;
+    background-color: rgba(22, 15, 38, .04);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    line-height: 1.4;
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: .9em;
+    text-wrap: pretty;
 }
 h1, .h1,
 h2, .h2,
@@ -145,6 +195,7 @@ a:hover {
 }
 p {
     margin-bottom: 1em;
+    text-wrap: pretty;
 }
 .prose p {
     margin-bottom: 2em;
@@ -280,6 +331,7 @@ dd {
         padding-left: 0;
         padding-right: 30px;
         > li {
+            padding-left: 20px;
             h2 {
                 margin-left: 100px;
                 margin-bottom: 50px;
@@ -287,6 +339,11 @@ dd {
             &::before {
                 left:20px;
             }
+        }
+    }
+    .cards:not(.ordered-cards) {
+        li {
+            width: calc(100% - 20px) !important;
         }
     }
     .projects {
