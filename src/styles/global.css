@@ -50,11 +50,11 @@ main {
     max-width: calc(100% - 2em);
     margin: auto;
     padding: 3em 1em;
-    max-width: 800px; 
+    max-width: 800px;
     margin: 0 auto;
 }
 section {
-    max-width: 800px; 
+    max-width: 800px;
     margin: 0 auto;
 }
 article {
@@ -62,22 +62,54 @@ article {
     max-width: calc(100% - 2em);
     margin: auto;
 }
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 4rem;
+    text-wrap: balance;
+}
+article p {
+    text-align: center;
+}
+@media (max-width: 720px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 1.953em;
+    }
+    header img {
+        width: 250px;
+    }
+}
 .header-title {
     font-family: 'Instrument Serif', serif;
     font-weight: 400;
     font-style: italic;
     font-size: 2.441em;
 }
-.project-card {
+.projects {
+    line-height: 1.4;
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+.projects li {
     display: flex; flex-direction: column; padding: 0px; margin: 0px; gap: 10px; width: calc(50% - 2.5rem); border: 1px solid rgba(0, 0, 0, 0.2); border-radius: 10px; padding: 1rem;
 }
-.project-card-title {
+.projects h3 {
     margin: 0px; font-weight: 600; font-family: 'Instrument Serif', serif; font-size: 1.25em;
 }
-.project-card-dates {
-    margin: 0px; font-style: italic; font-family: 'Instrument Serif', serif;
+.projects h4 {
+    margin: 0px; font-weight: 400; font-style: italic; font-family: 'Instrument Serif', serif; font-size: 1em;
 }
-.project-card-description {
+.projects p {
     margin: 0px; font-size: .9em; line-height: 1.2;
 }
 h1, .h1,
@@ -183,4 +215,43 @@ hr {
     clip-path: inset(50%);
     /* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
     white-space: nowrap;
+}
+
+
+dt {
+    font-weight: bold;
+}
+dd {
+    margin: 0 0 1em;
+}
+
+.main > ol {
+    list-style: none;
+    position: relative;
+    margin-left: 100px;
+    > li {
+        counter-increment: list0 1;
+        margin-bottom: 3em;
+    }
+    > li::before {
+        content: counter(list0, lower-roman) ".\00A0";
+        text-align: center;
+        position:absolute;
+        left: -100px;
+        margin-top: -20px;
+        width: 100px;
+        height: 95px;
+        padding-top: 5px;
+        background: url('images/ossf-hex-blank.svg') no-repeat;
+        background-size: contain;
+        font-family: 'Instrument Serif', serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 2.5em;
+    }
+    h2 {
+        font-family: 'Instrument Serif', serif;
+        font-weight: 400;
+        font-style: italic;
+    }
 }
