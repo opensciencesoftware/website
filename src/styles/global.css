@@ -121,16 +121,20 @@ article p {
         list-style: none;
         position: relative;
         counter-reset: list1;
+        padding-left: 0px !important;
+        border: 0px !important;
         > li {
             counter-increment: list1 1;
             position: relative;
-            padding-left: 3em;
+            padding-left: 2.2em;
+            border: 0px !important;
+            width: 100%;
             &::before {
                 content: counter(list1, lower-roman) ".\00A0";
                 text-align: right;
                 position: absolute;
                 left: 0px;
-                padding-left: .5em;
+                padding-left: 0em;
                 margin-top: -6px;
                 width: 40px;
                 color: rgba(0, 0, 0, 0.5);
