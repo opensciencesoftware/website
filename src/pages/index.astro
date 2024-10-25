@@ -17,13 +17,13 @@ import Footer from '../components/Footer.astro';
         </main>
         <section class="main">
             <ol>
-                <li>
+                <li class="mission">
                     <h2>Mission</h2>
                     <p>The Open Science Software Foundation (OSSF) is a <b>non-profit foundation</b> dedicated to supporting open source scientific tools, promoting accessibility and free availability of resources to the global scientific community.</p>
                 </li>
                 <li>
                     <h2>Focus</h2>
-                    <ol class="cards ordered-cards">
+                    <ol class="ordered-list">
                         <li>
                             <h3>Support existing Open Science projects</h3>
                         </li>
@@ -40,7 +40,7 @@ import Footer from '../components/Footer.astro';
                 </li>
                 <li>
                     <h2>Activities</h2>
-                    <ol class="cards ordered-cards">
+                    <ol class="ordered-list">
                         <li>
                             <h3>Support funding for Open Science projects</h3>
                         </li>
@@ -95,7 +95,7 @@ import Footer from '../components/Footer.astro';
                 </li>
                 <li>
                     <h2>Sources of funding</h2>
-                    <ol class="cards ordered-cards">
+                    <ol class="ordered-list">
                         <li>
                             <h3>Seqera</h3>
                         </li>
@@ -109,43 +109,52 @@ import Footer from '../components/Footer.astro';
                 </li>
                 <li>
                     <h2>Trustees</h2>
-                    <ol class="cards ordered-cards">
-                        <li>
-                            <img src="/images/trustees/ellen.jpg" alt="Ellen Sherwood" />
-                            <h3>Ellen Sherwood</h3>
-                            <h4>nf-core steering committee</h4>
-                        </li>
-                        <li>
-                            <img src="/images/trustees/paolo.png" alt="Paolo Di Tommaso" />
-                            <h3>Paolo Di Tommaso</h3>
-                            <h4>Creator of Nextflow</h4>
-                        </li>
-                        <li>
-                            <img src="/images/trustees/gisela.jpg" alt="Gisela Gavernet" />
-                            <h3>Gisela Gavernet</h3>
-                            <h4>nf-core steering committee</h4>
-                        </li>
-                        <li>
-                            <img src="/images/trustees/alex.jpg" alt="Alex Peltzer" />
-                            <h3>Alex Peltzer</h3>
-                            <h4>Co-creator of nf-core</h4>
-                        </li>
-                        <li>
-                            <img src="/images/trustees/evan.png" alt="Evan Floden" />
-                            <h3>Evan Floden</h3>
-                            <h4>nf-core steering committee</h4>
-                        </li>
-                        <li>
-                            <img src="/images/trustees/sven.jpg" alt="Sven" />
-                            <h3>Sven</h3>
-                            <h4>nf-core steering committee</h4>
-                        </li>
-                        <li>
-                            <img src="/images/trustees/phil.jpg" alt="Phil" />
-                            <h3>Phil</h3>
-                            <h4>Co-creator of nf-core</h4>
-                        </li>
-                    </ol>
+                    <div class="trustees-container">
+                        <ol class="trustee-hexagons">
+                            <li class="ellen">
+                                <div class="trustee-info">
+                                    <h3>Ellen Sherwood</h3>
+                                    <h4>nf-core steering committee</h4> 
+                                </div>
+                            </li>
+                            <li class="paolo">
+                                <div class="trustee-info">  
+                                    <h3>Paolo Di Tommaso</h3>
+                                    <h4>Creator of Nextflow</h4>
+                                </div>
+                            </li>
+                            <li class="gisela">
+                                <div class="trustee-info">
+                                    <h3>Gisela Gavernet</h3>
+                                    <h4>nf-core steering committee</h4>
+                                </div>
+                            </li>
+                            <li class="alex">
+                                <div class="trustee-info">
+                                    <h3>Alex Peltzer</h3>
+                                    <h4>Co-creator of nf-core</h4>
+                                </div>
+                            </li>
+                            <li class="evan">
+                                <div class="trustee-info">
+                                    <h3>Evan Floden</h3>
+                                    <h4>nf-core steering committee</h4>
+                                </div>
+                            </li>
+                            <li class="sven">
+                                <div class="trustee-info">
+                                    <h3>Sven</h3>
+                                    <h4>nf-core steering committee</h4>
+                                </div>
+                            </li>
+                            <li class="phil">
+                                <div class="trustee-info">
+                                    <h3>Phil</h3>
+                                    <h4>Co-creator of nf-core</h4>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
                 </li>
                 <li>
                     <h2>FAQ</h2>
