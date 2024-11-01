@@ -160,6 +160,8 @@ article p {
     --s: 130px;  /* size  */
     --m: 4px;    /* margin */
     --f: calc(1.732 * var(--s) + 4 * var(--m)  - 1px);
+    --ft: calc(1.732 * 130px + 4 * 4px  - 1px);
+    /* --f: calc(1.732 * 130 + 4 * 4  - 1); */
 }
 .trustee-hexagons {
     list-style: none;
@@ -174,7 +176,7 @@ article p {
         clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
         display: flex;
         flex-direction: column;
-        align-items: left;
+        align-items: flex-start;
         text-align: left;
         padding: 0;
         opacity: 0;
@@ -206,7 +208,7 @@ article p {
         background-position: center;
 
         &.ellen {
-            background-image: url('/images/trustees/ellen.jpg');
+            background-image: url('/images/trustees/ellen.png');
         }
         &.paolo {
             background-image: url('/images/trustees/paolo.png');
@@ -215,13 +217,13 @@ article p {
             background-image: url('/images/trustees/gisela.jpg');
         }
         &.alex {
-            background-image: url('/images/trustees/alex.jpg');
+            background-image: url('/images/trustees/alex.png');
         }
         &.evan {
             background-image: url('/images/trustees/evan.png');
         }
         &.sven {
-            background-image: url('/images/trustees/sven.jpg');
+            background-image: url('/images/trustees/sven.png');
         }
         &.phil {
             background-image: url('/images/trustees/phil.jpg');
@@ -239,9 +241,12 @@ article p {
         width: calc(var(--s)/2 + var(--m));
         float: left;
         height: 120%;
-        shape-outside: repeating-linear-gradient(     
+        shape-outside: repeating-linear-gradient(
+        #0000 0 calc(calc(1.732 * 130px + 4 * 4px  - 1px) - 3px),      
+        #000  0 calc(1.732 * 130px + 4 * 4px  - 1px));
+        /* shape-outside: -webkit-repeating-linear-gradient(     
         #0000 0 calc(var(--f) - 3px),      
-        #000  0 var(--f));
+        #000  0 var(--f)); */
     }
     h3 {
         font-family: 'Instrument Serif', serif;
