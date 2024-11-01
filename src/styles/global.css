@@ -157,11 +157,6 @@ article p {
 .trustees-container {
     display: flex;
     flex-direction: row;
-    --s: 130px;  /* size  */
-    --m: 4px;    /* margin */
-    --f: calc(1.732 * var(--s) + 4 * var(--m)  - 1px);
-    --ft: calc(1.732 * 130px + 4 * 4px  - 1px);
-    /* --f: calc(1.732 * 130 + 4 * 4  - 1); */
 }
 .trustee-hexagons {
     list-style: none;
@@ -196,13 +191,13 @@ article p {
     > li {
         
         position:relative;
-        width: var(--s);
-        margin: var(--m);
-        height: calc(var(--s)*1.1547); 
+        width: 130px;
+        margin: 4px;
+        height: calc(130px*1.1547);
         display: inline-block;
         font-size:initial;
         clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-        margin-bottom: calc(var(--m) - var(--s)*0.2885); 
+        margin-bottom: calc(4px - 130px*0.2885);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -229,6 +224,30 @@ article p {
             background-image: url('/images/trustees/phil.jpg');
         }
 
+        @media (min-width: 602px) {
+            &.evan {
+                margin-left: 69px;
+            }
+        }
+
+        @media (min-width: 464px) and (max-width: 601px) {
+            &.alex {
+                margin-left: 69px;
+            }
+        }
+
+        @media (min-width: 391px) and (max-width: 463px) {
+            &.gisela, &.phil {
+                margin-left: 69px;
+            }
+        }
+
+        @media (max-width: 390px) {
+            &.paolo, &.alex, &.sven {
+                margin-left: 69px;
+            }
+        }
+
         &:hover {
             .trustee-info {
                 opacity: 1;
@@ -236,18 +255,16 @@ article p {
         }
     }
 
-    &:before {
+    /* &:before {
         content: "";
-        width: calc(var(--s)/2 + var(--m));
+        width: calc(130px/2 + 4px);
         float: left;
         height: 120%;
         shape-outside: repeating-linear-gradient(
-        #0000 0 calc(calc(1.732 * 130px + 4 * 4px  - 1px) - 3px),      
-        #000  0 calc(1.732 * 130px + 4 * 4px  - 1px));
-        /* shape-outside: -webkit-repeating-linear-gradient(     
-        #0000 0 calc(var(--f) - 3px),      
-        #000  0 var(--f)); */
-    }
+            #0000 0 calc(229px - 3px),
+            #000  0 229px
+        );
+    } */
     h3 {
         font-family: 'Instrument Serif', serif;
         font-size: 1.3em;
